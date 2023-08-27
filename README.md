@@ -78,6 +78,6 @@ The above improvements and upgrades brought with them bugs which needed addressi
 
 ### Reach out<br> 
 
-Email - yashbharatiya@gmail.com <br>
+[Email](yashbharatiya@gmail.com) <br>
 
-Github- https://github.com/yashTEF
+[Github](https://github.com/yashTEF)
