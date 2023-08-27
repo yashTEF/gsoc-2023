@@ -1,4 +1,4 @@
-## Google Summer of Code 2023: Work Product
+# Google Summer of Code 2023: Work Product
 *Project Gist and relevant work done during the GSoC 2023 program*
 
 ## About The Project
@@ -6,7 +6,7 @@
 **Eclipse Cargo Tracker: Improve Visual Appeal and User Experience**
 
 Eclipse Cargo Tracker: [Project Website](https://eclipse-ee4j.github.io/cargotracker/) <br>
-See this project on: [Google Summer of Code](https://summerofcode.withgoogle.com/projects/#5104569337511936) <br>
+See this project on: [Google Summer of Code](https://summerofcode.withgoogle.com/programs/2023/projects/XtV7l10F) <br>
 Mentor: [Reza Rahman](https://github.com/m-reza-rahman)
 
 **Project Accomplished Milestones**
