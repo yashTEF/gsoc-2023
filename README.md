@@ -1,129 +1,79 @@
-# Google Summer of Code
-*Project Details and Work done during the GSoC 2020 programme*
+# Google Summer of Code 2023: Work Product
+*Project Gist and relevant work done during the GSoC 2023 program*
 
 ## About The Project
 
-**Eclipse SWTChart - Extending The Export Options**
+**Eclipse Cargo Tracker: Improve Visual Appeal and User Experience**
 
-See Eclipse SWTChart on [Eclipse](https://projects.eclipse.org/projects/science.swtchart), [Github](https://github.com/eclipse/swtchart)  
-See this project on [Google Summer of code](https://summerofcode.withgoogle.com/projects/#5104569337511936)  
-Mentor - [Philip Wenig](https://github.com/eselmeister)
+About Eclipse Cargo Tracker: [Github](https://github.com/eclipse/swtchart](https://eclipse-ee4j.github.io/cargotracker/))  
+See this project on [Google Summer of Code](https://summerofcode.withgoogle.com/projects/#5104569337511936)
+Mentor - [Reza Rahman](https://github.com/m-reza-rahman)
 
 **Project Accomplished Milestones**
 
-1. Added SVG Template Export Option
+1. Improved design and structuring for the project website
+2. Improved User Interface for the Cargo Tracker application with a more modern look.
+3. Move to Primefaces version 12.0.0
+4. Bug Fixes
 
-2. Extending the Export Setting Dialog Box for Series Selection
+## Improved design and structuring for the project website
 
-3. Perfomance Improvement in R-Script Export
+The project website for the Eclipse Cargo Tracker project now has a improved look
+with a better design and styling along with a modern-look navigation bar.
 
-## SVG Export via Inkscape Template
+Links to code:
+  1. [Project Website Improvements](https://github.com/eclipse-ee4j/cargotracker/pull/241)
+  2. [Navbar and Scrollbar](https://github.com/eclipse-ee4j/cargotracker/pull/257)
 
-SVG or Scalable Vector Graphics file is a popular export option when
-exporting as images mainly due to its property of retaining quality
-when resized (i.e. resolution is changed).
-The above property makes SVG files appropriate for images that
-contain high details like plots and graphs.
+## Improved User Interface for the Cargo Tracker application with a more modern look.
 
-SWTChart now supports an option to be exported to (.svg) format using this lightweight Template Export
-Option which has no dependancy to any external library and is much more efficient when exporting multiple series.
+The Cargo Tracker application now has an improved and modern look.
+This includes a better menu bar, addition of buttons for better navigation and a loading progress topbar.
+Also includes better structuring and general styling for the application.
 
-An Inkscape Template along with the exporting option was added for each of the following types of chart-
+Links to code:
+ 1. [Improve UI](https://github.com/eclipse-ee4j/cargotracker/pull/260)
 
-1. LineSeries Chart
+## Move to Primefaces version 12.0.0
 
-2. BarSeries Chart
+The existing external dependency to Primefaces library was deprecated and old, so the below PR provides
+a successful upgrade to the latest Primfaces Saga release with minimal bugs.
 
-3. ScatterSeries Chart
+Links to code:
+  1. [Primefaces 12.0.0](https://github.com/eclipse-ee4j/cargotracker/pull/269)
 
-PRs for addtion of LineChart to the Template Export-
+## Bug Fixing
 
-1. [Pull Request 1](https://github.com/eclipse/swtchart/pull/171)
+The above improvements and upgrades brought with them bugs which needed addressing.
 
-2. [Pull Request 2](https://github.com/eclipse/swtchart/pull/173)
+  1. Responsive Navbar
+     Link to Issue: [Navbar Issue](https://github.com/eclipse-ee4j/cargotracker/issues/259)
+     Fix: [#262](https://github.com/eclipse-ee4j/cargotracker/pull/262)
+     
+  2. Live Map url not rendering
+     Link to Issue: [Live Map Issue](https://github.com/eclipse-ee4j/cargotracker/issues/270)
+     Fix: [#271](https://github.com/eclipse-ee4j/cargotracker/pull/271)
+     
+  3. Change deadline date pick is too restrictive
+     Link to Issue: [Restrictive deadline](https://github.com/eclipse-ee4j/cargotracker/issues/274)
+     Fix: [#277](https://github.com/eclipse-ee4j/cargotracker/pull/277)
+     
+  4. Event logger screen should be more mobile friendly
+     Link to Issue: [Mobile friendly event logger](https://github.com/eclipse-ee4j/cargotracker/issues/275)
 
-PRs for addition of BarChart to the Template Export-
-
-1. [Pull Request 1](https://github.com/eclipse/swtchart/pull/176)
-
-PRs for addition of ScatterChart to the Template Export-
-
-1. [Pull Request 1](https://github.com/eclipse/swtchart/pull/184)
-
-The above changes added the SVG Template Export option to SWTChart,
-However, there were further changes needed for optimized and efficient working of the export option
-
-Following were the PRs related to issues and bug fixing and further optimization-
-
-1. [Pull Request 1](https://github.com/eclipse/swtchart/pull/193)
-
-2. [Pull Request 2](https://github.com/eclipse/swtchart/pull/195)
-
-3. [Pull Request 3](https://github.com/eclipse/swtchart/pull/197)
-
-4. [Pull Request 4](https://github.com/eclipse/swtchart/pull/199)
-
-5. [Pull Request 5](https://github.com/eclipse/swtchart/pull/222)
-
-Here are some final sample exports showcasing the template export at work-
-
-<img src="./Untitled1.svg" height="500" width="500">
-
-<img src="./Untitled2.svg" height="500" width="500">
-
-<img src="./Untitled4.svg" height="500" width="500">
-
-Future work and improvements may include the following-
-
-1. Find a way to remove the Hard Coded Coordinates for better code readability
-
-2. Adding Symbols, Symbol Size and LineStyles to the exported series
-
-
-## Extending the Export Settings Dialog for Series Selection
-
-The Export Settings Dialog was enhanced and improve to support runtime
-selection of series to be exported in various export.
-
-This allows user to easily change the series selection and
-control the visibility of a series in the export
-
-PR for the change-
-
-1. [Pull Request 1](https://github.com/eclipse/swtchart/pull/210)
-
-### A screenshot of the feature
-
-<img src="./Screenshot from 2020-07-24 15-21-21.png" height="500" width="500">
-
-
-## Performance Improvement in R-Script Export Option
-
-There were improvements in R-Script regarding styling 
-, addition of different symbols and improvement in the scatter plot.
-
-PRs for the above changes-
-
-1. [Pull Request 1](https://github.com/eclipse/swtchart/pull/216)
-
-2. [Pull Request 2](https://github.com/eclipse/swtchart/pull/219)
-
-3. [Pull Request 3](https://github.com/eclipse/swtchart/pull/226)
-
-Here are the screenshots for the improvements 
-
-<img src="./Screenshot from 2020-08-07 16-32-36.png" height="500" width="500">
-
-<img src="./Screenshot from 2020-08-21 13-27-30.png" height="500" width="500">
-
-<img src="./Screenshot from 2020-08-21 13-52-14.png" height="500" width="500">
-
-<img src="./Screenshot from 2020-08-21 13-53-44.png" height="500" width="500">
+     Fix for the above issue needed multiple PRs-
+     
+       [4a](https://github.com/eclipse-ee4j/cargotracker/pull/278)
+     
+       [4b](https://github.com/eclipse-ee4j/cargotracker/pull/279)
+     
+       [4c](https://github.com/eclipse-ee4j/cargotracker/pull/280)
+     
+       [4d](https://github.com/eclipse-ee4j/cargotracker/pull/281)
+     
 
 ### Contact information-<br> 
 
-Name- Yash Bharatiya <br>
+Email - (yashbharatiya@gmail.com) <br>
 
-Mail- yashbharatiya@gmail.com <br>
-
-Github- https://github.com/yashTEF
+Github- (https://github.com/yashTEF)
